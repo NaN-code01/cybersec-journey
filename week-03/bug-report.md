@@ -4,10 +4,10 @@
 **Severity**: Medium (The issue requires the victim to be logged in and to leave an unlocked session accessible to another person)
 
 ## Description
-The password change functionality on simulasi.untirta.ac.id allows an authenticated student to set a new password without first providing or verifying their current password. This creates a re-authentication weakness because anyone who gains access to an already authenticated, unlocked session can change the account password without knowing the existing password. Although this scenario is sometimes described as an authentication or CSRF-related issue, the primary weakness demonstrated here is **insufficient re-authentication** for a sensitive account action.
+The password change functionality on `simulasi.untirta.ac.id` allows an authenticated student to set a new password without first providing or verifying their current password. This creates a re-authentication weakness because anyone who gains access to an already authenticated, unlocked session can change the account password without knowing the existing password. Although this scenario is sometimes described as an authentication or CSRF-related issue, the primary weakness demonstrated here is **insufficient re-authentication** for a sensitive account action.
 
 ## Steps to Reproduce
-1. Log in to simulasi.untirta.ac.id using a standard student account.
+1. Log in to `simulasi.untirta.ac.id` using a standard student account.
 
 2. Navigate to the **Change Password** page.
 
@@ -27,7 +27,7 @@ Require the user's current password before allowing a password change. The serve
 
 ---
 
-> sebagai catatan pribadii
+> sebagai catatan pribadi
 > 
 > **CVSS v3.1 Score:** 6.5 Medium
 > **CVSS v3.1 Vector:** `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N`
