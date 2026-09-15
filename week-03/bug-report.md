@@ -30,6 +30,7 @@ Require the user's current password before allowing a password change. The serve
 > sebagai catatan pribadi
 > 
 > **CVSS v3.1 Score:** 6.5 Medium
+> 
 > **CVSS v3.1 Vector:** `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N`
 > 
 > | Metric                       | Value             | Reasoning                                                                                                                                                                                                                                |
@@ -41,7 +42,7 @@ Require the user's current password before allowing a password change. The serve
 > | **Scope (S)**                | **Unchanged (U)** | The vulnerability affects the same security authority/account system rather than crossing into a separate security authority.                                                                                                            |
 > | **Confidentiality (C)**      | **None (N)**      | The described vulnerability itself does not directly disclose information.                                                                                                                                                               |
 > | **Integrity (I)**            | **High (H)**      | The attacker can change a security-sensitive account attribute—the account password—without knowing the existing password.                                                                                                               |
-> | **Availability (A)**         | **None (N)**      | CVSS Availability concerns the availability of the vulnerable service/resource, not simply whether a user is temporarily unable to log in. FIRST specifically distinguishes account/data effects from service availability. ([FIRST][2]) |
+> | **Availability (A)**         | **None (N)**      | CVSS Availability concerns the availability of the vulnerable service/resource, not simply whether a user is temporarily unable to log in. FIRST specifically distinguishes account/data effects from service availability.  |
 > 
 > **CVSS Rationale:** The vulnerability is rated Medium with a CVSS v3.1 score of 6.5. The attack is considered Network-based because the vulnerable functionality is part of a web application. Attack Complexity is Low because no specialized conditions or sophisticated preparation are required. Privileges Required is Low because the attacker must have access to an authenticated student session, but does not require administrative privileges. User Interaction is None in the described scenario because the attacker can directly operate an already authenticated and unlocked session. Scope is Unchanged because the impact remains within the same application security authority. Confidentiality is rated None because the vulnerability does not directly disclose information, while Integrity is rated High because it allows an attacker to change the account password without verifying the existing password. Availability is rated None because the described impact concerns access to an individual account rather than the availability of the application or service.
 > 
